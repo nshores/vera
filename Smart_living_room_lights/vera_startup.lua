@@ -1,6 +1,3 @@
-1. Put following in lua start up:
-
-
 SS_SID = "urn:micasaverde-com:serviceId:SecuritySensor1"
 SP_SID = "urn:upnp-org:serviceId:SwitchPower1"
 ONKYO_SID = "urn:schemas-onkyo-com:serviceId:Receiver:1"

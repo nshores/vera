@@ -1,5 +1,3 @@
-3. Create scene name NobodyInLivingROom. This scene will be triggered by Living Room motion sensor not tripped event. In lua code of this scene, put following:
-
 function CheckHumanInLivingRoomStatus()
     if HumanInLivingRoom == 1 or os.difftime(os.time(), LastTripInLivingRoom) < LivingRoomTimeout then
             -- log("Movement in kitchen room before delay LivingRoomTimeout seconds, do not turn off light")
