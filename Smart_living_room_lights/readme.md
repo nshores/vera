@@ -1,4 +1,4 @@
-A series of LUA scripts to create a lighting control system based on occupancy, and other inputs (
+A series of LUA scripts to create a lighting control system based on occupancy, other inputs (
 Recievers, TV's, HTPC's) and a motion sensor. 
 
 1. Put following in lua start up - vera_startup.lua
