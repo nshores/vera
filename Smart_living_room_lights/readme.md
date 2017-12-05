@@ -5,6 +5,7 @@ Recievers, TV's, HTPC's) and a motion sensor.
 2. Create scene name SomebodyInLivingRoom. This scene will be triggered by living room motion sensor. Insert the code from somebody_in_living_room.lua as a LUA trigger.
 3. Create scene name NobodyInLivingRoom. This scene will be triggered by Living Room motion sensor not tripped event. In lua code of this scene, paste in nobody_living_room.lua
 
+This script requires the use of XBMCState, and the Onkyo receiver plugin. 
 
 Code based on examples found here --
 
