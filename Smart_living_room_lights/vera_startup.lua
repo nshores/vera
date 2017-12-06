@@ -1,7 +1,7 @@
 SS_SID = "urn:micasaverde-com:serviceId:SecuritySensor1"
 SP_SID = "urn:upnp-org:serviceId:SwitchPower1"
-ONKYO_SID = "urn:schemas-onkyo-com:serviceId:Receiver:1"
-XBMC_SID = "urn:schemas-upnp-org:device:XBMCState:1"
+ONKYO_SID = "urn:upnp-org:serviceId:SwitchPower1"
+XBMC_SID = "urn:upnp-org:serviceId:XBMCState1"
 
 HumanInLivingRoom = 0
 LastTripInLivingRoom = os.time()
