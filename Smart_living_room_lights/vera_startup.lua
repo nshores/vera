@@ -68,7 +68,7 @@ end
 
 function isPlaying(devID)
     local devStatus = luup.variable_get(XBMC_SID, "PlayerStatus", devID)
-    if (devStatus == "video_start") then
+    if (devStatus == "Video_start") then
         return true
     else
         return false
@@ -77,7 +77,7 @@ end
 
 function isStopped(devID)
     local devStatus = luup.variable_get(XBMC_SID, "PlayerStatus", devID)
-    if (devStatus == "Video_Stop") then
+    if (devStatus == "Video_stop") then
         return true
     else
         return false
