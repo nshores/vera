@@ -2,7 +2,7 @@ A series of LUA scripts to create a lighting control system based on occupancy, 
 Recievers, TV's, HTPC's) and a motion sensor. 
 
 1. Put following in lua start up - vera_startup.lua
-2. Create scene name SomebodyInLivingRoom. This scene will be triggered by living room motion sensor. Insert the code from somebody_in_living_room.lua as a LUA trigger.
+2. Create scene name SomebodyInLivingRoom. This scene will be triggered by living room motion sensor. Insert the code from somebody_in_living_room.lua as a LUA trigger. Set the action of this scene to be "disarmed" on the motion sensor, and set a schedule for 5 minutes to re-arm the sensor (To stop it from triggering constantly when are you are trying to turn off the light manually)
 3. Create scene name NobodyInLivingRoom. This scene will be triggered by Living Room motion sensor not tripped event. In lua code of this scene, paste in nobody_living_room.lua
 
 This script requires the use of XBMCState, and the Onkyo receiver plugin. 
