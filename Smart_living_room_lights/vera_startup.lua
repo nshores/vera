@@ -77,7 +77,7 @@ end
 
 function isStopped(devID)
     local devStatus = luup.variable_get(XBMC_SID, "PlayerStatus", devID)
-    if (devStatus == "video_end") then
+    if (devStatus == "Video_Stop") then
         return true
     else
         return false
