@@ -13,12 +13,12 @@ LivingRoomMotionSensor = 33
 LivingRoomLight = 17
 
 --Get status for light switch
-function getStatus(devID)
+function getLightStatus(devID)
     local devStatus = luup.variable_get(SP_SID, "Status", devID)
     return devStatus
 end
 
-function isOn(devID)
+function LightisOn(devID)
     local devStatus = luup.variable_get(SP_SID, "Status", devID)
     if (devStatus == "1") then
         return true
@@ -27,7 +27,7 @@ function isOn(devID)
     end
 end
 
-function isOff(devID)
+function LightisOff(devID)
     local devStatus = luup.variable_get(SP_SID, "Status", devID)
     if (devStatus == "0") then
         return true
@@ -37,12 +37,12 @@ function isOff(devID)
 end
 
 --Get status for Onkyo
-function getStatus(devID)
+function getOnykoStatus(devID)
     local devStatus = luup.variable_get(ONKYO_SID, "Status", devID)
     return devStatus
 end
 
-function isOn(devID)
+function OnkyoisOn(devID)
     local devStatus = luup.variable_get(ONKYO_SID, "Status", devID)
     if (devStatus == "1") then
         return true
@@ -51,7 +51,7 @@ function isOn(devID)
     end
 end
 
-function isOff(devID)
+function OnkyoisOff(devID)
     local devStatus = luup.variable_get(ONKYO_SID, "Status", devID)
     if (devStatus == "0") then
         return true
@@ -60,7 +60,7 @@ function isOff(devID)
     end
 end
 
---Get status for Onkyo
+--Get status for XBMC
 function getStatus(devID)
     local devStatus = luup.variable_get(XBMC_SID, "PlayerStatus", devID)
     return devStatus

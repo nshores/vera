@@ -18,8 +18,9 @@ if isNotTrip(LivingRoomMotionSensor)
 -- log("Checking to make sure XBMC is stopped")
     and isStopped(XBMC)
 -- log("Checking to make sure Onkyo is off")
-    and isOff(Onkyo) then 
+    and OnkyoisOff(Onkyo) then 
 -- log("Eveything off, people gone")
     HumanInLivingRoom = 0
     luup.call_delay ("CheckHumanInLivingRoomStatus", LivingRoomTimeout)
 end
+
