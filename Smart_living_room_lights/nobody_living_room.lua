@@ -1,5 +1,5 @@
 function CheckHumanInLivingRoomStatus()
-    if HumanInLivingRoom == 1 or os.difftime(os.time(), LastTripInLivingRoom) < LivingRoomTimeout then
+    if (HumanInLivingRoom == "1") or os.difftime(os.time(), LastTripInLivingRoom) < LivingRoomTimeout then
             -- log("Movement in living room before delay LivingRoomTimeout seconds, do not turn off light")
         return true
     end
